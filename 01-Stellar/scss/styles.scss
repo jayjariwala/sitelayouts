@@ -1,0 +1,179 @@
+// Browser Resets
+body,h1,h2,ul,li,p
+{
+	margin: 0;
+	padding: 0;
+}
+
+ul
+{
+	list-style: none;
+}
+
+// Global settings
+body
+{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+} 
+
+//hero
+.hero
+{
+	position: relative;
+	height: 720px;
+	background-image: url('../images/mountain.jpg');
+	background-position: center;
+	background-size: cover;
+	color: white;
+
+	&__wrapper
+	{
+		position: absolute;
+		height:100%;
+		width: 100%;
+		background-color: rgba(73,36,175,0.8);
+		z-index:0;
+	}
+
+	&__content
+	{
+		position: relative;
+		z-index: 5;
+		padding-top: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+}
+
+// header
+
+.header
+{
+	position:relative;
+	max-width: 1000px;
+	margin:0 auto;
+	box-sizing:border-box;
+
+	&__logo
+	{
+		display: inline-block;
+	}
+
+	&__navigation
+	{
+		position: absolute;
+		top: 50%;
+		right: 0;
+  	transform: translateY(-50%);
+		display:inline-block;
+		top: 50%;
+		
+		li
+		{
+			display:inline;
+			padding-left:30px;
+		}
+
+		a
+		{
+			color:white;
+			text-decoration: none;
+		}
+	}
+}
+
+// button
+
+.button
+{
+	text-transform: uppercase;
+	color:white;
+	font-weight:700;
+	cursor: pointer;
+	
+	&--small
+	{
+		width: 87px;
+    height: 32px;
+    border-radius: 20px;
+	}
+
+	&--large
+	{
+		width: 180px;
+    height: 50px;
+    border-radius:40px;
+	}
+
+	&--transparent
+	{
+		background: transparent;
+		border-color:rgba(255,255,255,.3);
+	}
+
+	&--dark
+	{
+		background-color:black;
+		border:none;
+	}
+}
+
+// introduction
+.introduction
+{
+	margin-top: 190px;
+	width:100%;
+	text-align: center;
+
+	&__heading
+	{
+		font-size: 3rem;
+		letter-spacing: 3px;
+	}
+
+	&__button-container
+	{
+		margin-top:40px;
+
+		button
+		{
+			margin-left:10px;
+		}
+	}
+}
+
+//scrolldown
+.scrolldown
+{
+	width:100%;
+	text-align:center;
+	margin-top:220px;
+	position:relative;
+	
+	i 
+	{
+		position:absolute;
+		top:2px;
+		right:2.4px;
+		font-size:12px;
+	}
+	
+	&__box
+	{
+		position:relative;
+		display:inline-block;
+		background-color:transparent;
+		border:1px solid white;
+		height:25px;
+		width:16px;
+		border-radius:5px;
+	}
+	
+	p
+	{
+		font-size:12px;
+		letter-spacing:1px;
+	}
+}

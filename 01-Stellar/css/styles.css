@@ -1,0 +1,107 @@
+body, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
+
+.hero {
+  position: relative;
+  height: 720px;
+  background-image: url("../images/mountain.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white; }
+  .hero__wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(73, 36, 175, 0.8);
+    z-index: 0; }
+  .hero__content {
+    position: relative;
+    z-index: 5;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.header {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+  .header__logo {
+    display: inline-block; }
+  .header__navigation {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    top: 50%; }
+    .header__navigation li {
+      display: inline;
+      padding-left: 30px; }
+    .header__navigation a {
+      color: white;
+      text-decoration: none; }
+
+.button {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  cursor: pointer; }
+  .button--small {
+    width: 87px;
+    height: 32px;
+    border-radius: 20px; }
+  .button--large {
+    width: 180px;
+    height: 50px;
+    border-radius: 40px; }
+  .button--transparent {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.3); }
+  .button--dark {
+    background-color: black;
+    border: none; }
+
+.introduction {
+  margin-top: 190px;
+  width: 100%;
+  text-align: center; }
+  .introduction__heading {
+    font-size: 3rem;
+    letter-spacing: 3px; }
+  .introduction__button-container {
+    margin-top: 40px; }
+    .introduction__button-container button {
+      margin-left: 10px; }
+
+.scrolldown {
+  width: 100%;
+  text-align: center;
+  margin-top: 220px;
+  position: relative; }
+  .scrolldown i {
+    position: absolute;
+    top: 2px;
+    right: 2.4px;
+    font-size: 12px; }
+  .scrolldown__box {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid white;
+    height: 25px;
+    width: 16px;
+    border-radius: 5px; }
+  .scrolldown p {
+    font-size: 12px;
+    letter-spacing: 1px; }
+
+/*# sourceMappingURL=styles.css.map */
